@@ -1,0 +1,411 @@
+doctype html
+head
+  title Document
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous')
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js' integrity='sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN' crossorigin='anonymous')
+  script.
+  
+    function reverseCounter(hours, minutes, seconds) {
+      let totalSeconds = hours * 3600 + minutes * 60 + seconds;
+
+        let timer = setInterval(function() {
+          if (totalSeconds >= 0) {
+            let remainingHours = Math.floor(totalSeconds / 3600);
+            let remainingMinutes = Math.floor((totalSeconds % 3600) / 60);
+            let remainingSeconds = totalSeconds % 60;
+            const element = document.getElementById("r1");
+            const element2 = document.getElementById("r2");
+            const element3 = document.getElementById("r3");
+            if (element) {
+                   element.innerText = remainingHours;
+                   element2.innerText=remainingMinutes;
+                   element3.innerText=remainingSeconds;
+                        }
+                          
+
+             console.log(
+                 `${remainingHours}h ${remainingMinutes}m ${remainingSeconds}s`
+                );
+
+                 totalSeconds--;
+                    } else {
+                       clearInterval(timer);
+                             }
+                  }, 1000); // Update the counter every 1 second (1000 milliseconds)
+              }
+              reverseCounter(1, 30, 5);
+    
+  style.
+    #List1{float: right;
+    display:flex;
+    position: relative;
+    top: 0%;
+    flex-direction: row;
+    list-style-type: none;
+    position: absolute;
+    padding: 0;
+    margin-top: 0;
+    height: 25px;
+    background-color:rgba(236,236,236,255);
+    width: 100%;
+    }
+    #Items1{
+    margin-left: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white ;
+    margin-top:2%;
+    width: 100%;
+    height: 12%;
+   
+    }
+    #Im1{
+    width:12% ;
+    height: 12%;
+    margin-right: 40px;
+    }
+    #SearchBar{
+    background-color:rgba(236,236,236,255);
+    border: 0px;
+    height: 40px;
+    width: 40%;
+    }
+    #Button1{
+    background-color: #f57224;
+    height: 42px;
+    border: 0px;
+    width:42px;
+    }
+    .Container_2{
+    background-color:rgba(236,236,236,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    width: 100%;
+    height: 10%;
+    }
+    #Button2{
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    background-color: white;
+    }
+    #Im2{
+    width: 10%;
+    float: left;
+    }
+    .ContainsAll{
+    background-color:rgba(236,236,236,255) ;
+    }
+    .ItemContainer{
+    background-color:white;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    }
+    .ImageContainer2{
+    width:16%;
+    position: relative;
+    transition: 1s;
+    }
+    #r1{
+    background-color: #f57224;
+    color: white;
+    text-align: center;
+    width:30px;
+    height:30px;
+    margin-top: 5px;
+    }
+    #r2{
+    background-color: #f57224;
+    color: white;
+    text-align: center;
+    width:30px;
+    height:30px;
+    margin-top: 5px;
+    }
+    #r3{
+    background-color: #f57224;
+    color: white;
+    text-align: center;
+    width:30px;
+    height:30px;
+    margin-top: 5px;
+    }
+    .ImageContainer1{
+    margin-left: 10px;
+    height: 5%;
+    width:16%;
+    }
+    .Sticky{
+    position:sticky;
+    top: 0px;
+    z-index: 4;
+    }
+    #detail1{
+    width: 100%;
+    height: 20%;
+    }#red2{
+    color: #f57224;
+    }
+    #detail3{
+    font-size: smaller;
+    text-decoration: line-through;
+    display: flex;
+    }.Rowmein{
+    display: flex;
+    flex-direction: row;
+    }
+    #detail4{
+    font-size: smaller;
+    margin-left: 10px;
+    }
+    .DarazMall{
+    width: 90%;
+    height: 600px;
+    left: 5%;
+    }
+    .ImageBwImage{
+    position: absolute;
+    bottom: -13%;
+    width: 33%;
+    left: 33%;
+    background-color: white;
+    }
+    .ImageContainer2:hover{
+    
+    }
+    .ImageContainer1:hover{
+    }
+.Top_Corner
+  ul#List1
+    li#Items1(style='margin-left: 200px; color: orange;') Save more on App
+    li#Items1 Daraz Affiliate Program
+    li#Items1 Sell on Daraz
+    li#Items1 Customer Care
+    li#Items1 Track My order  
+    li#Items1 Login
+    li#Items1(href="/hello") Login
+    li#Items1  Change Language
+.Sticky
+  form(action="/abc", method="post", class="second")
+    img#Im1(src='https://icms-image.slatic.net/images/ims-web/3ae67ef5-e5f6-42c3-9a40-993ef9a7bfae.png')
+    input#SearchBar(type='text' name='Search')
+    button#Button1
+      img(style='width: 130%;' src='https://media.istockphoto.com/id/1251267984/vector/white-magnifying-glass-symbol-on-orange-button-isolated-on-white-minimalistic-flat-search.jpg?s=1024x1024&w=is&k=20&c=P4UHyUDJCjXHfCACGkPoGduUzl1QLYfB6eSjoODLwsI=')
+    img(style='width: 3%; margin-left: 42px;' src='https://i.pinimg.com/originals/2b/35/a4/2b35a4763a31b6f5f40d9de9d7e05f88.jpg')
+    img(style='width:15%; margin-left: 42px;' src='https://icms-image.slatic.net/images/ims-web/7a379e2e-4b65-4617-9188-94e0c768cd9d.png')
+.SlideShow(style='margin-top: 13px ; margin-bottom: 0px;')
+  #carouselExampleControls.carousel.slide(data-ride='carousel')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100(style='height: 395px;' width='1184' src='https://icms-image.slatic.net/images/ims-web/cfe5b071-8d97-4d1e-a1e3-446f007ba4a2.jpg' alt='First slide')
+      .carousel-item
+        img.d-block.w-100(src='I2.jpg' alt='Second slide')
+      .carousel-item
+        img.d-block.w-100(src='I4.jpg' alt='Third slide')
+      .carousel-item
+        img.d-block.w-100(src='I1.jpg' alt='Third slide')
+    a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+div(style='background-color:rgba(236,236,236,255) ;')
+  .Container_2(style='justify-content:space-evenly; ')
+    button#Button2
+      img#Im2(src='https://icms-image.slatic.net/images/ims-web/dd27eb9b-9dae-4bf9-ba1e-dd6eef36b678.png')
+      |       
+    button#Button2
+      img#Im2(src='https://icms-image.slatic.net/images/ims-web/4cb66235-3fa2-4e95-83e3-8ccc641021da.png')
+      |       Fashion
+    button#Button2
+      img#Im2(src='https://icms-image.slatic.net/images/ims-web/350ba4ba-7f90-47c6-a90b-0458bd3e5809.png')
+      |       Beauty
+    button#Button2
+      img#Im2(src='https://icms-image.slatic.net/images/ims-web/949d29fd-16ca-4023-b4cf-22199977b46f.png')
+      |       Home Decor
+  h(style='font-size: larger ;margin-left: 75px;') Flash Sale
+.ItemContainer(style='display: flex; flex-direction: row; border-bottom: solid black 1px;')
+  p(style='color:#f57224 ;margin-left: 40px; margin-top: 10px;') On Sale Now
+  p(style='float:right ; margin-left:40px ;padding: 0; margin-top: 10px; margin-right: 10px;') Ending In
+  p#r1 07
+  p(style='margin:6px') :
+  p#r2 14
+  p(style='margin:6px') :
+  p#r3 14
+  
+.ItemContainer(style='margin-top: 5px; display: flex;flex-direction: row; justify-content: space-between;')
+   each product in front
+    .ImageContainer1
+      
+   
+        img(style='width: 100% ; margin-left: 2px;' src=product.images_list[0])
+        p#detail1= product.title
+        p#red2="Rs. " +product.price
+        .Rowmein
+          
+
+          
+         
+        a(href="/AddCart/"+product._id class="btn btn-success") Add to cart
+  
+  
+  
+.DarazMall(style='position:relative; margin-top: 200px;')
+  h(style='') DarazMall
+  .ItemContainer2(style='display: flex;flex-direction: row; justify-content: space-between;')
+    .ImageContainer2(style='position: relative;')
+      img(style='width:100%' src='https://static-01.daraz.pk/p/ee74bea0828dc49cd189e9aec2757ff5.jpg')
+      .ImageBwImage
+        img(src='https://static-01.daraz.pk/other/shop/ebc0513bfbad519ce3edb1f6ae4dcdff.jpeg' style='width: 100%; border: solid black 1px; padding: 5%;')
+    .ImageContainer2
+      img(style='width:100%' src='https://static-01.daraz.pk/p/da4d1b7ce47c5d6041c027a93114a8c0.jpg')
+      .ImageBwImage(style='width: 33%;')
+        img(src='https://static-01.daraz.pk/other/shop/f5ec224de5bcb3ddbe34e2322a02260a.png' style='width: 100%; border: solid black 1px; padding: 5%;')
+    .ImageContainer2
+      img(style='width:100% ;' src='https://static-01.daraz.pk/p/b907852b342c2d1ca383fffc8a7b43d7.jpg')
+      .ImageBwImage
+        img(src='https://static-01.daraz.pk/other/shop/1dec31f9969d93174413c3024ca9a2dc.jpeg' style='width: 100%; border: solid black 1px; padding: 5%;')
+    .ImageContainer2
+      img(style='width:100%' src='https://static-01.daraz.pk/p/b739d7de484bfe6abd9fdc181d4d70ff.jpg')
+      .ImageBwImage
+        img(src='https://static-01.daraz.pk/other/shop/a3b28a9b60e8d09dca12a460624ea18e.jpeg' style='width: 100%; border: solid black 1px; padding: 5%;')
+    .ImageContainer2(style='position: relative;')
+      img(style='width:100%' src='https://static-01.daraz.pk/p/ee74bea0828dc49cd189e9aec2757ff5.jpg')
+      .ImageBwImage
+        img(src='https://static-01.daraz.pk/other/shop/ebc0513bfbad519ce3edb1f6ae4dcdff.jpeg' style='width: 100%; border: solid black 1px; padding: 5%;')
+    
+  // Footer
+  footer.bg-dark.text-center.text-white(style='margin-top: 200px;')
+    // Grid container
+    .container.p-4
+      // Section: Social media
+      section.mb-4
+        // Facebook
+        a.btn.btn-outline-light.btn-floating.m-1(href='#!' role='button')
+          i.fab.fa-facebook-f
+        // Twitter
+        a.btn.btn-outline-light.btn-floating.m-1(href='#!' role='button')
+          i.fab.fa-twitter
+        // Google
+        a.btn.btn-outline-light.btn-floating.m-1(href='#!' role='button')
+          i.fab.fa-google
+        // Instagram
+        a.btn.btn-outline-light.btn-floating.m-1(href='#!' role='button')
+          i.fab.fa-instagram
+        // Linkedin
+        a.btn.btn-outline-light.btn-floating.m-1(href='#!' role='button')
+          i.fab.fa-linkedin-in
+        // Github
+        a.btn.btn-outline-light.btn-floating.m-1(href='#!' role='button')
+          i.fab.fa-github
+      // Section: Social media
+      // Section: Form
+      section
+        form(action='')
+          // Grid row
+          .row.d-flex.justify-content-center
+            // Grid column
+            .col-auto
+              p.pt-2
+                strong Sign up for our newsletter
+            // Grid column
+            // Grid column
+            .col-md-5.col-12
+              // Email input
+              .form-outline.form-white.mb-4
+                input#form5Example21.form-control(type='email')
+                label.form-label(for='form5Example21') Email address
+            // Grid column
+            // Grid column
+            .col-auto
+              // Submit button
+              button.btn.btn-outline-light.mb-4(type='submit')
+                | Subscribe
+            // Grid column
+          // Grid row
+      // Section: Form
+      // Section: Text
+      section.mb-4
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          | repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+          | eum harum corrupti dicta, aliquam sequi voluptate quas.
+      // Section: Text
+      // Section: Links
+      section
+        // Grid row
+        .row
+          // Grid column
+          .col-lg-3.col-md-6.mb-4.mb-md-0
+            h5.text-uppercase Links
+            ul.list-unstyled.mb-0
+              li
+                a.text-white(href='/adminPortal') Link 1
+              li
+                a.text-white(href='#!') Link 2
+              li
+                a.text-white(href='#!') Link 3
+              li
+                a.text-white(href='#!') Link 4
+          // Grid column
+          // Grid column
+          .col-lg-3.col-md-6.mb-4.mb-md-0
+            h5.text-uppercase Links
+            ul.list-unstyled.mb-0
+              li
+                a.text-white(href='#!') Link 1
+              li
+                a.text-white(href='#!') Link 2
+              li
+                a.text-white(href='#!') Link 3
+              li  
+                a.text-white(href='#!') Link 4
+          // Grid column
+          // Grid column
+          .col-lg-3.col-md-6.mb-4.mb-md-0
+            h5.text-uppercase Links
+            ul.list-unstyled.mb-0
+              li
+                a.text-white(href='#!') Link 1
+              li
+                a.text-white(href='#!') Link 2
+              li
+                a.text-white(href='#!') Link 3
+              li
+                a.text-white(href='#!') Link 4
+          // Grid column
+          // Grid column
+          .col-lg-3.col-md-6.mb-4.mb-md-0
+            h5.text-uppercase Links
+            ul.list-unstyled.mb-0
+              li
+                a.text-white(href='#!') Link 1
+              li
+                a.text-white(href='#!') Link 2
+              li
+                a.text-white(href='#!') Link 3
+              li
+                a.text-white(href='#!') Link 4
+          // Grid column
+        // Grid row
+      // Section: Links
+    // Grid container
+    // Copyright
+    .text-center.p-3(style='background-color: rgba(0, 0, 0, 0.2);')
+      | &copy; 2020 Copyright:
+      a.text-white(href='https://mdbootstrap.com/') MDBootstrap.com
+    // Copyright
+  // Footer

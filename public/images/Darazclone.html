@@ -1,0 +1,407 @@
+html
+  body
+    | doctype html
+    | html(lang=&apos;en&apos;)
+    | head
+    | title Document
+    | link(href=&apos;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css&apos;, rel=&apos;stylesheet&apos;, integrity=&apos;sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD&apos;, crossorigin=&apos;anonymous&apos;)
+    | script(src=&apos;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js&apos;, integrity=&apos;sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN&apos;, crossorigin=&apos;anonymous&apos;)
+    | style.
+    | #List1{float: right;
+    | display:flex;
+    | position: relative;
+    | top: 0%;
+    | flex-direction: row;
+    | list-style-type: none;
+    | position: absolute;
+    | padding: 0;
+    | margin-top: 0;
+    | height: 25px;
+    | background-color:rgba(236,236,236,255);
+    | width: 100%;
+    | }
+    | #Items1{
+    | margin-left: 40px;
+    | font-family: &apos;Gill Sans&apos;, &apos;Gill Sans MT&apos;, Calibri, &apos;Trebuchet MS&apos;, sans-serif
+    | }.second{
+    | display: flex;
+    | justify-content: center;
+    | align-items: center;
+    | background-color: white ;
+    | margin-top:2%;
+    | width: 100%;
+    | height: 12%;
+    | }
+    | #Im1{
+    | width:12% ;
+    | height: 12%;
+    | margin-right: 40px;
+    | }
+    | #SearchBar{
+    | background-color:rgba(236,236,236,255);
+    | border: 0px;
+    | height: 40px;
+    | width: 40%;
+    | }
+    | #Button1{
+    | background-color: #f57224;
+    | height: 42px;
+    | border: 0px;
+    | width:42px;
+    | }
+    | .Container_2{
+    | background-color:rgba(236,236,236,255);
+    | display: flex;
+    | justify-content: center;
+    | align-items: center;
+    | margin-top: 4px;
+    | width: 100%;
+    | height: 10%;
+    | }
+    | #Button2{
+    | border: none;
+    | color: black;
+    | padding: 10px 20px;
+    | text-align: left;
+    | text-decoration: none;
+    | display: inline-block;
+    | margin: 4px 2px;
+    | cursor: pointer;
+    | border-radius: 16px;
+    | background-color: white;
+    | }
+    | #Im2{
+    | width: 10%;
+    | float: left;
+    | }
+    | .ContainsAll{
+    | background-color:rgba(236,236,236,255) ;
+    | }
+    | .ItemContainer{
+    | background-color:white;
+    | width: 90%;
+    | position: relative;
+    | left: 5%;
+    | }
+    | .ImageContainer2{
+    | width:16%;
+    | position: relative;
+    | transition: 1s;
+    | }
+    | #red1{
+    | background-color: #f57224;
+    | color: white;
+    | text-align: center;
+    | width:30px;
+    | height:30px;
+    | margin-top: 5px;
+    | }
+    | .ImageContainer1{
+    | margin-left: 10px;
+    | height: 5%;
+    | width:16%;
+    | }
+    | .Sticky{
+    | position:sticky;
+    | top: 0px;
+    | z-index: 4;
+    | }
+    | #detail1{
+    | width: 100%;
+    | height: 20%;
+    | }#red2{
+    | color: #f57224;
+    | }
+    | #detail3{
+    | font-size: smaller;
+    | text-decoration: line-through;
+    | display: flex;
+    | }.Rowmein{
+    | display: flex;
+    | flex-direction: row;
+    | }
+    | #detail4{
+    | font-size: smaller;
+    | margin-left: 10px;
+    | }
+    | .DarazMall{
+    | width: 90%;
+    | height: 600px;
+    | left: 5%;
+    | }
+    | .ImageBwImage{
+    | position: absolute;
+    | bottom: -13%;
+    | width: 33%;
+    | left: 33%;
+    | background-color: white;
+    | }
+    | .ImageContainer2:hover{
+    | transform: scale(1.3);
+    | z-index: 2;
+    | }
+    | .ImageContainer1:hover{
+    | transform: scale(1.3);
+    | z-index: 2;
+    | }
+    | body(style=&apos;background-color: rgba(236,236,236,255);&apos;)
+    | .Top_Corner
+    | ul#List1
+    | li#Items1(style=&apos;margin-left: 200px; color: orange;&apos;) Save more on App
+    | li#Items1 Daraz Affiliate Program
+    | li#Items1 Sell on Daraz
+    | li#Items1 Customer Care
+    | li#Items1 Track My order  
+    | li#Items1 Login
+    | li#Items1 Sign Up
+    | li#Items1  Change Language
+    | .Sticky
+    | .second
+    | img#Im1(src=&apos;Image2.png&apos;)
+    | input#SearchBar(type=&apos;text&apos;, name=&apos;Search&apos;)
+    | button#Button1
+    | img(style=&apos;width: 130%;&apos;, src=&apos;Image4.png&apos;)
+    | img(style=&apos;width: 3%; margin-left: 42px;&apos;, src=&apos;Image5.png&apos;)
+    | img(style=&apos;width:15%; margin-left: 42px;&apos;, src=&apos;Image6.png&apos;)
+    | .SlideShow(style=&apos;margin-top: 13px ; margin-bottom: 0px;&apos;)
+    | #carouselExampleControls.carousel.slide(data-ride=&apos;carousel&apos;)
+    | .carousel-inner
+    | .carousel-item.active
+    | img.d-block.w-100(style=&apos;height: 395px;&apos;, width=&apos;1184&apos;, src=&apos;I3.jpg&apos;, alt=&apos;First slide&apos;)
+    | .carousel-item
+    | img.d-block.w-100(src=&apos;I2.jpg&apos;, alt=&apos;Second slide&apos;)
+    | .carousel-item
+    | img.d-block.w-100(src=&apos;I4.jpg&apos;, alt=&apos;Third slide&apos;)
+    | .carousel-item
+    | img.d-block.w-100(src=&apos;I1.jpg&apos;, alt=&apos;Third slide&apos;)
+    | a.carousel-control-prev(href=&apos;#carouselExampleControls&apos;, role=&apos;button&apos;, data-slide=&apos;prev&apos;)
+    | span.carousel-control-prev-icon(aria-hidden=&apos;true&apos;)
+    | span.sr-only Previous
+    | a.carousel-control-next(href=&apos;#carouselExampleControls&apos;, role=&apos;button&apos;, data-slide=&apos;next&apos;)
+    | span.carousel-control-next-icon(aria-hidden=&apos;true&apos;)
+    | span.sr-only Next
+    | div(style=&apos;background-color:rgba(236,236,236,255) ;&apos;)
+    | .Container_2(style=&apos;justify-content:space-evenly; &apos;)
+    | button#Button2
+    | img#Im2(src=&apos;Im1.png&apos;)
+    | Mart
+    | button#Button2
+    | img#Im2(src=&apos;Im2.png&apos;)
+    | Fashion
+    | button#Button2
+    | img#Im2(src=&apos;Im3.png&apos;)
+    | Beauty
+    | button#Button2
+    | img#Im2(src=&apos;Im4.png&apos;)
+    | Home Decor
+    | |  
+    | h(style=&apos;font-size: larger ;margin-left: 75px;&apos;) Flash Sale
+    | .ItemContainer(style=&apos;display: flex; flex-direction: row; border-bottom: solid black 1px;&apos;)
+    | p(style=&apos;color:#f57224 ;margin-left: 40px; margin-top: 10px;&apos;) On Sale Now
+    | p(style=&apos;float:right ; margin-left:40px ;padding: 0; margin-top: 10px; margin-right: 10px;&apos;) Ending In
+    | p#red1 07
+    | p(style=&apos;margin:6px&apos;) :
+    | p#red1 14
+    | p(style=&apos;margin:6px&apos;) :
+    | p#red1 14
+    | p(style=&apos;margin:6px&apos;) :
+    | p#red1 3
+    | .ItemContainer(style=&apos;margin-top: 5px; display: flex;flex-direction: row; justify-content: space-between;&apos;)
+    | .ImageContainer1
+    | img(style=&apos;width: 100% ; margin-left: 2px;&apos;, src=&apos;II1.jpg&apos;)
+    | p#detail1 P47 New Multifunctional Noise Cancelling+FM+Mic +Wired Double Mode 
+    | p#red2 Rs. 1300
+    | .Rowmein
+    | p#detail3 Rs.2000
+    | p#detail4 -81%
+    | .ImageContainer1
+    | img(style=&apos;width: 100% ; margin-left: 2px;&apos;, src=&apos;II2.jpg&apos;)
+    | p#detail1 { Buy 1 Get 1 Free } Wireless Bluetooth Earphones Or Hand Free 
+    | p#red2 Rs. 120
+    | .Rowmein
+    | p#detail3 Rs.2000
+    | p#detail4 -81%
+    | .ImageContainer1
+    | img#Hi(style=&apos;width: 100% ; margin-left: 2px;&apos;, src=&apos;II3.jpg&apos;)
+    | p#detail1
+    | | Black Advanced Pro Version Bluetooth Digital Wrist Smart Watch IP67
+    | p#red2 Rs. 125
+    | .Rowmein
+    | p#detail3 Rs.2000
+    | p#detail4 -81%
+    | .ImageContainer1
+    | img(style=&apos;width: 100% ; margin-left: 2px;&apos;, src=&apos;II9.jpg&apos;)
+    | p#detail1 New S109 Wireless Bluetooth Headset Hanging Ear Unisex Driving Can
+    | p#red2 Rs. 131
+    | .Rowmein
+    | p#detail3 Rs.2000
+    | p#detail4 -81%
+    | .ImageContainer1
+    | img(style=&apos;width: 100% ; margin-left: 2px;&apos;, src=&apos;II5.jpg&apos;)
+    | p#detail1 Floret Navy Blue Premium Export Quality UnStitched Shalwar Kameez Fabric
+    | p#red2 Rs. 139
+    | .Rowmein
+    | p#detail3 Rs.2000
+    | p#detail4 -81%
+    | .ImageContainer1
+    | img(style=&apos;width: 100% ; margin-left: 2px;&apos;, src=&apos;II6.jpg&apos;)
+    | p#detail1 Floret Navy Blue Premium Export Quality UnStitched Shalwar Kameez Fabric
+    | p#red2 Rs. 21
+    | .Rowmein
+    | p#detail3 Rs.2000
+    | p#detail4 -81%
+    | .DarazMall(style=&apos;position:relative; margin-top: 200px;&apos;)
+    | h(style=&apos;&apos;) DarazMall
+    | .ItemContainer2(style=&apos;display: flex;flex-direction: row; justify-content: space-between;&apos;)
+    | .ImageContainer2(style=&apos;position: relative;&apos;)
+    | img(style=&apos;width:100%&apos;, src=&apos;Ig1.jpg&apos;)
+    | |  
+    | .ImageBwImage
+    | img(src=&apos;Lg2.png&apos;, style=&apos;width: 100%; border: solid black 1px; padding: 5%;&apos;)
+    | .ImageContainer2
+    | img(style=&apos;width:100%&apos;, src=&apos;Ig2.jpg&apos;)
+    | |  
+    | .ImageBwImage(style=&apos;width: 33%;&apos;)
+    | img(src=&apos;lg3.jpeg&apos;, style=&apos;width: 100%; border: solid black 1px; padding: 5%;&apos;)
+    | .ImageContainer2
+    | img(style=&apos;width:100% ;&apos;, src=&apos;Ig3.jpg&apos;)
+    | |  
+    | .ImageBwImage
+    | img(src=&apos;lg1.png&apos;, style=&apos;width: 100%; border: solid black 1px; padding: 5%;&apos;)
+    | .ImageContainer2
+    | img(style=&apos;width:100%&apos;, src=&apos;Ig1.jpg&apos;)
+    | |  
+    | .ImageBwImage
+    | img(src=&apos;lg2.png&apos;, style=&apos;width: 100%; border: solid black 1px; padding: 5%;&apos;)
+    | .ImageContainer2
+    | img(style=&apos;width:100%&apos;, src=&apos;Ig2.jpg&apos;)
+    | |  
+    | .ImageBwImage
+    | img(src=&apos;lg1.png&apos;, style=&apos;width: 100%; border: solid black 1px; padding: 5%;&apos;)
+    | .ImageContainer2
+    | img(style=&apos;width:100%&apos;, src=&apos;Ig3.jpg&apos;)
+    | |  
+    | .ImageBwImage
+    | img(src=&apos;lg1.png&apos;, style=&apos;width: 100%; border: solid black 1px; padding: 5%;&apos;)
+    | // Footer
+    | footer.bg-dark.text-center.text-white(style=&apos;margin-top: 200px;&apos;)
+    | // Grid container
+    | .container.p-4
+    | // Section: Social media
+    | section.mb-4
+    | // Facebook
+    | a.btn.btn-outline-light.btn-floating.m-1(href=&apos;#!&apos;, role=&apos;button&apos;)
+    | i.fab.fa-facebook-f
+    | // Twitter
+    | a.btn.btn-outline-light.btn-floating.m-1(href=&apos;#!&apos;, role=&apos;button&apos;)
+    | i.fab.fa-twitter
+    | // Google
+    | a.btn.btn-outline-light.btn-floating.m-1(href=&apos;#!&apos;, role=&apos;button&apos;)
+    | i.fab.fa-google
+    | // Instagram
+    | a.btn.btn-outline-light.btn-floating.m-1(href=&apos;#!&apos;, role=&apos;button&apos;)
+    | i.fab.fa-instagram
+    | // Linkedin
+    | a.btn.btn-outline-light.btn-floating.m-1(href=&apos;#!&apos;, role=&apos;button&apos;)
+    | i.fab.fa-linkedin-in
+    | // Github
+    | a.btn.btn-outline-light.btn-floating.m-1(href=&apos;#!&apos;, role=&apos;button&apos;)
+    | i.fab.fa-github
+    | // Section: Social media
+    | // Section: Form
+    | section
+    | form(action=&apos;&apos;)
+    | // Grid row
+    | .row.d-flex.justify-content-center
+    | // Grid column
+    | .col-auto
+    | p.pt-2
+    | strong Sign up for our newsletter
+    | // Grid column
+    | // Grid column
+    | .col-md-5.col-12
+    | // Email input
+    | .form-outline.form-white.mb-4
+    | input#form5Example21.form-control(type=&apos;email&apos;)
+    | label.form-label(for=&apos;form5Example21&apos;) Email address
+    | // Grid column
+    | // Grid column
+    | .col-auto
+    | // Submit button
+    | button.btn.btn-outline-light.mb-4(type=&apos;submit&apos;)
+    | | Subscribe
+    | // Grid column
+    | // Grid row
+    | // Section: Form
+    | // Section: Text
+    | section.mb-4
+    | p
+    | | Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+    | | repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+    | | eum harum corrupti dicta, aliquam sequi voluptate quas.
+    | // Section: Text
+    | // Section: Links
+    | section
+    | // Grid row
+    | .row
+    | // Grid column
+    | .col-lg-3.col-md-6.mb-4.mb-md-0
+    | h5.text-uppercase Links
+    | ul.list-unstyled.mb-0
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 1
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 2
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 3
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 4
+    | // Grid column
+    | // Grid column
+    | .col-lg-3.col-md-6.mb-4.mb-md-0
+    | h5.text-uppercase Links
+    | ul.list-unstyled.mb-0
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 1
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 2
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 3
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 4
+    | // Grid column
+    | // Grid column
+    | .col-lg-3.col-md-6.mb-4.mb-md-0
+    | h5.text-uppercase Links
+    | ul.list-unstyled.mb-0
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 1
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 2
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 3
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 4
+    | // Grid column
+    | // Grid column
+    | .col-lg-3.col-md-6.mb-4.mb-md-0
+    | h5.text-uppercase Links
+    | ul.list-unstyled.mb-0
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 1
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 2
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 3
+    | li
+    | a.text-white(href=&apos;#!&apos;) Link 4
+    | // Grid column
+    | // Grid row
+    | // Section: Links
+    | // Grid container
+    | // Copyright
+    | .text-center.p-3(style=&apos;background-color: rgba(0, 0, 0, 0.2);&apos;)
+    | | &amp;copy; 2020 Copyright:
+    | a.text-white(href=&apos;https://mdbootstrap.com/&apos;) MDBootstrap.com
+    | // Copyright
+    | // Footer
